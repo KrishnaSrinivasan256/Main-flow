@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organic Haven</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        header {
+            background: #2c5f2d;
+            padding: 1rem 2rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            position: relative;
+        }
+
+        .nav-links li {
+            position: relative;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            padding: 1rem;
+            display: block;
+        }
+
+        .dropdown {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: white;
+            list-style: none;
+            padding: 0;
+            display: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            min-width: 200px;
+        }
+
+        .dropdown li {
+            width: 100%;
+        }
+
+        .dropdown a {
+            color: #333;
+            padding: 10px;
+            display: block;
+            text-align: left;
+            transition: background 0.3s;
+        }
+
+        .dropdown a:hover {
+            background: #f0fff0;
+        }
+
+        .nav-links li:hover .dropdown {
+            display: block;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 4rem 2rem;
+            background: #f0fff0;
+        }
+
+        .company-description {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .image-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            max-width: 1000px;
+            margin: 3rem auto;
+            padding: 2rem;
+        }
+
+        .image-section img {
+            width: 45%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-text {
+            max-width: 50%;
+        }
+
+        .image-text h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: #2c5f2d;
+        }
+
+        .image-text p {
+            font-size: 1rem;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        footer {
+            background: #2c5f2d;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Cyra Organics</div>
+            <ul class="nav-links">
+                <li>
+                    <a href="#home">Home</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Organic Apples</a></li>
+                        <li><a href="#">Free-range Eggs</a></li>
+                        <li><a href="#">Cold-pressed Olive Oil</a></li>
+                        <li><a href="#">Ancient Grains</a></li>
+                        <li><a href="#">Raw Honey</a></li>
+                        <li><a href="#">Herbal Teas</a></li>
+                        <li><a href="#">Fresh Kale</a></li>
+                        <li><a href="#">Organic Quinoa</a></li>
+                    </ul>
+                </li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to Cyra Organics</h1>
+        <p>Discover the purest organic products nature has to offer</p>
+    </section>
+
+    <div class="company-description">
+        <h2>About Our Organic Journey</h2>
+        <p>At Organic Haven, we're committed to bringing you the freshest, most nutritious organic produce straight from family-owned farms. Founded in 2010, our mission has always been to bridge the gap between sustainable agriculture and healthy living. We rigorously test all our products to ensure they meet the highest organic certification standards while maintaining fair trade practices with our farming partners.</p>
+    </div>
+
+    <!-- Organic Products Image Section -->
+    <div class="image-section">
+        <img src="https://images.pexels.com/photos/6643432/pexels-photo-6643432.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Organic farm">
+        <div class="image-text">
+            <h2>Pure Organic Products</h2>
+            <p>We source our organic fruits, vegetables, and grains from trusted farms that follow strict organic certification guidelines. Our goal is to provide the highest quality food for a healthier lifestyle.</p>
+        </div>
+    </div>
+    
+    <div class="image-section">
+        <div class="image-text">
+            <h2>Meet Our Team</h2>
+            <p>Our dedicated team works tirelessly to ensure quality, sustainability, and fair trade. With a passion for organic living, we collaborate with local farmers and industry experts to bring you the best nature has to offer.</p>
+        </div>
+        <img src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Office Team">
+    </div>
+
+    <footer>
+        <p>2023 Organic Haven. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>
